@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Anupam%20Kumar&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=AI%20Engineer%20%E2%80%A2%20Agentic%20Systems%20%E2%80%A2%20RAG%20Specialist&descAlignY=58&descSize=18&descColor=a78bfa" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Anupam%20Kumar&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=AI%20Engineer%20%E2%80%A2%20Agentic%20Systems%20%E2%80%A2%20Backend%20Platforms&descAlignY=58&descSize=18&descColor=a78bfa" />
 
 <br/>
 
@@ -34,186 +34,95 @@
 
 ## About Me
 
-I'm **Anupam Kumar** — an AI Engineer and CS graduate from IIITM Gwalior with a focus on building intelligent systems that are reliable enough to run in production, not just impressive enough to demo.
+I'm **Anupam Kumar**, an AI Engineer with a B.Tech in Computer Science from IIITM Gwalior (2021–2025). I build production AI systems — Graph-RAG engines, agentic pipelines, and full-stack platforms — designed to hold up under real traffic, not just in a demo.
 
-My work sits at the intersection of three disciplines I care about equally: **AI systems** (retrieval, reasoning, agents), **platform engineering** (APIs, distributed services, containerized deployment), and **ML infrastructure** (evaluation pipelines, experiment tracking, observability). I'm most effective when all three are in scope at once — designing a system end-to-end rather than handing off at a boundary.
+My work spans three areas I like to own end-to-end: **AI systems** (retrieval, reasoning, agents), **backend & platform engineering** (APIs, distributed services, containerized deployment), and **ML infrastructure** (evaluation, experiment tracking, observability).
 
-Over the past few years I've worked across Graph-RAG architectures, multi-agent reasoning workflows, computer vision pipelines, LLM evaluation infrastructure, and backend systems serving real production traffic. I have a habit of taking ideas from research papers — Graph-RAG, hybrid retrieval fusion, RAGAS-based evaluation — and engineering them into deployable systems with measurable correctness guarantees, proper failure handling, and the observability needed to trust them in production.
-
-A few things I hold as non-negotiable in the systems I build:
-- **Nothing ships without evaluation.** Every pipeline I build includes a benchmark loop — RAGAS, fast metrics, MLflow tracking — so quality is measurable, not assumed.
-- **Observability is part of the design, not an afterthought.** Prometheus instrumentation, health/readiness endpoints, and structured logging go in from day one.
-- **Reliability means planning for failure.** Cache corruption, LLM timeouts, cold-start latency spikes, connection pool exhaustion — these have all come up, and the systems I've built handle them gracefully.
-
-I'm particularly interested in roles where the challenge is making AI systems *dependable at scale* — whether that means improving retrieval quality, reducing hallucination risk, tightening evaluation loops, building ML serving infrastructure, or designing the platform layer that other engineers build on top of.
-
-> 🌐 &nbsp;**Portfolio:** [anupai-portfolio.vercel.app](https://anupai-portfolio.vercel.app/) &nbsp;·&nbsp; 📄 &nbsp;**Open to:** AI Engineering · Platform Engineering · MLOps · Backend Infrastructure
+Currently open to full-time roles in **AI Engineering · Platform Engineering · ML Infrastructure**.
 
 ---
 
-## 🧰 Technical Stack
+## 🧰 Tech Stack
 
-<details>
-<summary><b>AI & LLM Systems</b></summary>
-<br/>
+**Languages**
 
-| Domain | Technologies |
-|---|---|
-| LLM Frameworks | LangChain, Groq, OpenRouter, HuggingFace Inference, Sentence Transformers |
-| Retrieval | FAISS, BM25 (`rank-bm25`), RRF Fusion, Cross-Encoder Reranking |
-| Vector Stores | FAISS, Pinecone, ChromaDB |
-| Evaluation | RAGAS, MLflow, Fast Metrics, per-question artifact logging |
-| Embeddings | `BAAI/bge-base-en-v1.5`, `BAAI/bge-reranker-base`, SentenceTransformers |
-| Graph | Citation graphs, semantic graphs, hybrid BFS graph expansion |
-| Training | PyTorch, LoRA/QLoRA fine-tuning, Char-CNN OCR models |
-| Routing | Semantic OOD routing, domain centroid calibration, retrieval support probes |
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
-</details>
+**AI / LLM**
 
-<details>
-<summary><b>Backend & Infrastructure</b></summary>
-<br/>
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black) ![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square) ![RAG](https://img.shields.io/badge/RAG-7c3aed?style=flat-square) ![Agentic AI](https://img.shields.io/badge/Agentic%20AI-7c3aed?style=flat-square)
 
-| Domain | Technologies |
-|---|---|
-| APIs | FastAPI, Uvicorn, Gunicorn, SSE streaming, JWT auth (Argon2), SlowAPI |
-| Databases | PostgreSQL (SQLAlchemy, Alembic, NullPool/PgBouncer), SQLite, MongoDB |
-| Caching | Redis (multi-layer: exact + semantic + retrieval + decomposition + intent) |
-| Messaging | Celery, distributed task queues |
-| Monitoring | Prometheus (ASGI middleware), Grafana dashboards, structured health/readiness |
-| Experiment Tracking | MLflow (artifact logging, reproducible benchmarks, evaluation runs) |
+**Retrieval & Vector Search**
 
-</details>
+![FAISS](https://img.shields.io/badge/FAISS-4b5563?style=flat-square) ![Pinecone](https://img.shields.io/badge/Pinecone-1a1a2e?style=flat-square) ![ChromaDB](https://img.shields.io/badge/ChromaDB-4b5563?style=flat-square) ![BM25](https://img.shields.io/badge/BM25-4b5563?style=flat-square)
 
-<details>
-<summary><b>DevOps & Deployment</b></summary>
-<br/>
+**Backend & Data**
 
-| Domain | Technologies |
-|---|---|
-| Containers | Docker, Docker Compose, Nginx reverse proxy |
-| Cloud | AWS, Render, Fly.io, VPS |
-| CI/CD | GitHub Actions (in roadmap), systemd, cron scheduling |
-| Security | JWT Bearer, Argon2 hashing, rate limiting, cookie management |
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white)
 
-</details>
+**DevOps, Cloud & Observability**
 
-<details>
-<summary><b>Automation & Frontend</b></summary>
-<br/>
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white) ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white) ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
 
-| Domain | Technologies |
-|---|---|
-| Browser Automation | Playwright, Selenium (anti-detection, human-like simulation) |
-| Scraping | BeautifulSoup, Scrapy, GROBID, pdfplumber |
-| Frontend | React, Tailwind CSS, Vite, Streamlit |
-| Data | pandas, NumPy, PDF/OCR pipelines |
+**Frontend**
 
-</details>
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 
----
-
-## 💼 Experience
-
-### AI Engineer Intern — Yahweh Innovations
-**April 2025 – December 2025** &nbsp;|&nbsp; *Faridabad, Haryana (Remote)*
-
-Embedded in a product engineering team building AI-powered SaaS tools for enterprise clients across real estate, HR, and customer service verticals.
-
-- **Reduced query resolution time by 35%** by engineering AI-powered enterprise chatbots with context-aware routing and domain-grounded retrieval, replacing static FAQ workflows with dynamic LLM-backed pipelines.
-- **Cut manual operational effort by 50–60%** by designing end-to-end Agentic AI workflows — multi-step reasoning chains with tool use, structured output, and human-in-the-loop confirmation gates.
-- **Accelerated B2B SaaS delivery cycles by 2×** by building modular, containerized service components (FastAPI + Docker + PostgreSQL) that could be configured per client without source-level changes.
-- **Achieved 95%+ accuracy** on an automated real estate audit system that processed multi-document packages — reducing human review turnaround from days to minutes through LLM-based extraction and validation.
 
 ---
 
 ## 🚀 Featured Projects
 
----
+### 🔬 AetherCV — Graph-RAG Research Engine
+*Citation-graph-aware RAG system answering computer vision research questions across 238 papers with zero hallucinations.*
 
-### 🔬 AetherCV — Production Graph-RAG Research Engine
+`Python` `FastAPI` `FAISS` `BM25` `Redis` `PostgreSQL` `Prometheus` `MLflow` `Docker`
 
-Most AI research assistants hallucinate citations, lose context on complex questions, and fall apart outside a notebook. **AetherCV** is built to solve exactly those failures — a fully deployed research engine that answers deep computer vision questions by finding and synthesizing evidence across 238 academic papers, with zero hallucinations measured across all benchmark runs.
+- Built a production Graph-RAG platform combining dense, lexical, and citation-graph retrieval to reach **0.94 context recall** and a **0% hallucination rate** across 238 papers / 12,288 chunks.
+- Engineered a 7-layer Redis caching system (exact, semantic, retrieval, decomposition, intent) that drove an **84%+ cache hit rate** while keeping p99 latency near **4.9s on CPU-only infrastructure**.
+- Designed a multi-signal semantic router (domain centroid, retrieval-support probe, entity shape) for out-of-domain detection, keeping responses **100% grounded** with zero false-positive escapes.
+- Instrumented full MLOps observability — MLflow tracking, Prometheus/Grafana monitoring, containerized deployment — with **zero evaluation failures** across all benchmark runs.
 
-The core idea: instead of plain vector search, AetherCV builds a knowledge graph of how papers cite and relate to each other. When you ask *"How did DETR influence later transformer-based detectors?"*, the system doesn't just find similar text — it traverses citation lineages, surfaces method descendants, and assembles a grounded answer from the actual evidence trail.
-
-`Python 3.11` `FastAPI` `FAISS` `BM25` `Redis` `PostgreSQL` `Prometheus` `Grafana` `MLflow` `Docker` `Nginx`
-
-**What it does:**
-- Accepts natural language research queries and routes them intelligently — simple factual questions go through fast retrieval, complex multi-paper comparisons go through a decomposition + graph expansion pipeline, and off-topic queries are rejected before any compute runs
-- Retrieves relevant passages using both semantic (FAISS) and keyword (BM25) search, fuses results, reranks when needed, then expands context by traversing a hybrid citation + semantic graph
-- Synthesizes grounded answers that cite only what was actually retrieved — no hallucinated paper IDs, no invented claims
-- Tracks every benchmark run with MLflow and exposes live metrics through a Prometheus + Grafana observability stack
-
-**Results that matter:**
-
-| What was measured | Result |
-|---|---|
-| Hallucination rate across all benchmark runs | **0%** |
-| Answers grounded in retrieved evidence | **100%** |
-| Context recall (RAGAS evaluation) | **0.94 / 1.0** |
-| End-to-end latency (CPU-only, live traffic) | **~4.9s p99** |
-| Cache hit rate on repeat/paraphrased queries | **100%** |
-| Papers in the knowledge base | **238** across 12,288 indexed chunks |
-
-**What makes it non-trivial to build:**
-Seven independent Redis cache layers (exact match, semantic/paraphrase, retrieval, decomposition, intent) mean the LLM is never called twice for equivalent queries. The graph expansion uses adaptive latency budgeting so traversal never becomes a tail-latency bottleneck. The router uses a multi-signal OOD decision — domain centroid, cluster similarity, retrieval support probe, and entity shape — not a single threshold, which is why it has zero false-positive escapes in production. The whole system runs on CPU-only infrastructure with no GPU dependency.
-
----
+[**↳ View on GitHub**](https://github.com/anupamkr1708/AetherCV-Graph-RAG)
 
 ### 🚀 LeadBoost SaaS — AI Lead Intelligence Platform
-
-Sales and growth teams spend hours manually finding, researching, and qualifying leads — most of which turn out to be a poor fit. **LeadBoost SaaS** replaces that manual loop with a multi-tenant platform that discovers leads through distributed web scraping, enriches each one with LLM-powered company and contact intelligence, and surfaces a scored, prioritized shortlist ready for outreach.
+*Multi-tenant platform that discovers, enriches, and scores sales leads at scale.*
 
 `LangChain` `Playwright` `Celery` `FastAPI` `PostgreSQL` `React` `Docker`
 
-**What it does:**
-- Runs distributed Playwright scrapers on Celery workers to discover leads at scale across multiple sources simultaneously — designed to scale horizontally as workloads grow
-- Enriches each discovered lead through a LangChain + Groq pipeline: semantic entity extraction, company profiling, and contact qualification that goes well beyond simple field parsing
-- Scores every lead with a normalized relevance score combining LLM semantic analysis and structured metadata signals, so teams work the highest-probability prospects first
-- Serves everything through a JWT-authenticated, multi-tenant FastAPI backend with role-based access control and a React dashboard showing enrichment status, scores, and pipeline analytics in real time
+- Architected a multi-tenant lead-intelligence SaaS processing **1,000+ leads/day** via distributed Playwright scrapers running on Celery workers.
+- Built a LangChain + Groq enrichment pipeline for semantic entity extraction and contact qualification, cutting manual research effort by **up to 80%**.
+- Implemented a JWT-secured, role-based multi-tenant FastAPI backend with a React dashboard for real-time lead scoring and pipeline analytics.
+- Containerized the full stack with Docker Compose for one-command deployment.
 
-**Impact:** Automated lead generation pipeline processing **1,000+ leads/day** — fully containerized with Docker Compose for one-command deployment.
+[**↳ View on GitHub**](https://github.com/anupamkr1708/LeadBoost-saas)
 
----
-
-### 🌿 AyurGenix — Agentic RAG Platform for Ayurvedic Medicine
-
-Classical Ayurvedic literature spans thousands of pages of Sanskrit manuscripts — rich with medical knowledge, but locked behind a script that standard OCR tools cannot reliably process. **AyurGenix** makes this corpus searchable and conversational: a RAG platform that lets practitioners and researchers ask natural language questions and receive answers grounded in specific source passages, with citations.
+### 🌿 AyurGenix — Agentic RAG for Ayurvedic Medicine
+*Citation-grounded RAG platform making 10,000+ pages of Sanskrit manuscripts searchable and conversational.*
 
 `FastAPI` `PyTorch` `Pinecone` `LangChain` `Docker`
 
-**What it does:**
-- Processes Sanskrit-script documents through a custom Char-CNN OCR model built specifically for the script's ligature-heavy glyphs and diacritical marks — handling degraded historical document quality that off-the-shelf OCR fails on entirely
-- Indexes the extracted text into Pinecone for semantic retrieval, enabling sub-second search across 10,000+ pages of structured and unstructured classical texts
-- Reranks candidate passages with a cross-encoder and generates citation-grounded responses — every answer traces back to a specific source location in the corpus
-- Powers multi-turn consultations through a LLaMA-3 conversational layer with long-term memory, so context is maintained across an entire session rather than resetting each turn
+- Built a custom Char-CNN OCR model to digitize Sanskrit-script manuscripts — solving a problem standard OCR tools fail at entirely.
+- Indexed 10,000+ pages into Pinecone, enabling sub-second semantic retrieval across the classical text corpus.
+- Reranked candidates with a cross-encoder and generated citation-grounded answers traceable to a specific source passage.
+- Powered multi-turn consultations through a LLaMA-3 conversational layer with persistent session memory.
 
-**Impact:** Sub-second retrieval across a 10,000+ page corpus with traceable citations — making a historically inaccessible knowledge base practically usable for the first time.
-
----
+[[**↳ View on GitHub**](https://github.com/anupamkr1708/AyurProject)
 
 ### 🤖 TalentForge AI — Autonomous Job Application Platform
+*End-to-end automation from LinkedIn job discovery to Easy Apply submission, gated by AI resume scoring.*
 
-Job hunting at scale means doing the same thing hundreds of times: search, filter, score, apply. **TalentForge AI** automates that entire loop — from discovering LinkedIn listings to scoring them against your resume with an LLM, filtering out poor fits, and submitting Easy Apply applications through browser automation — while keeping you in control of every step.
+`Python` `Playwright` `Streamlit` `SQLite` `Groq` `LangChain`
 
-The design priority throughout was safety and reliability: every action is rate-limited, every application is logged with its reason, and nothing touches LinkedIn until the system has passed your resume through an AI scoring gate.
+- Automated the full pipeline: LinkedIn scraping → LLM resume scoring (**70% semantic, 30% keyword**) → Playwright-based Easy Apply submission.
+- Enforced a strict state machine (`Discovered → Scored → Queued → Applied/Skipped/Failed`) with every decision logged to SQLite.
+- Built in safety controls — daily application caps, a dry-run mode, and a 4-tier LLM fallback chain (Groq → OpenRouter → HuggingFace → keyword) — for reliable, unattended operation.
+- Shipped a real-time Streamlit dashboard for match-score distribution, application trends, and CSV export.
 
-`Python 3.11` `Playwright` `Streamlit` `SQLite` `Groq` `LangChain` `FastAPI`
-
-**What it does:**
-- Scrapes LinkedIn for jobs matching your keywords, then scores each one against your full resume using an LLM — 70% semantic match weight, 30% keyword alignment — producing a normalized 0–1 relevance score per listing
-- Applies automatically to jobs above your score threshold through headless Playwright browser automation with human-like behavior (randomized typing speed, mouse patterns, browser fingerprints)
-- Tracks every job through a strict state machine — `DISCOVERED → SCORED → QUEUED → APPLIED / SKIPPED / FAILED` — with the reason for every skip or failure persisted to SQLite
-- Surfaces everything in a real-time Streamlit dashboard: daily application trends, match score distribution, company breakdown, and a filterable application table with one-click CSV export
-
-**Built-in safety that makes it production-usable:**
-- Hard daily application cap enforced at the database level — server restarts never double-count
-- Dry-run mode runs the complete pipeline (discovery → scoring → filtering) without touching LinkedIn, so you can validate behavior before going live
-- LLM provider fallback chain (Groq → OpenRouter → HuggingFace → keyword-only) means the pipeline never breaks entirely, even without API credentials
-- Clean six-layer architecture (Controller → Service → Storage → Model → Platform → Interface) means adding Indeed or Glassdoor is a single new class implementing an abstract interface — no changes to orchestration logic
+[**↳ View on GitHub**](https://github.com/anupamkr1708/TalentForge-AI)
 
 ---
+
 
 ## 📊 GitHub Activity — Last 12 Months
 
@@ -231,23 +140,22 @@ The design priority throughout was safety and reliability: every action is rate-
 ![](https://github-readme-activity-graph.vercel.app/graph?username=anupamkr1708&theme=tokyo-night&hide_border=true&area=true&bg_color=0d1117&color=a78bfa&line=7c3aed&point=ffffff&days=365&custom_title=Contribution%20Activity%20(Last%2012%20Months))
 
 </div>
-
 ---
 
 ## 🎓 Education
 
 **Indian Institute of Information Technology and Management, Gwalior**
-*B.Tech in Computer Science* &nbsp;|&nbsp; Graduated 2025
+B.Tech in Computer Science &nbsp;|&nbsp; 2021 – 2025
 
 ---
 
 ## 📫 Let's Connect
 
-I'm open to collaborating on ambitious AI engineering projects, discussing production RAG and agentic system design, or exploring full-time opportunities in AI engineering, platform engineering, or ML infrastructure.
+Open to collaborating on AI engineering projects, or discussing full-time opportunities in AI Engineering, Platform Engineering, or ML Infrastructure.
 
 <div align="center">
 
-🌐 **[anupai-portfolio.vercel.app](https://anupai-portfolio.vercel.app/)** &nbsp;·&nbsp; 📧 **anupsharma1708@gmail.com** &nbsp;·&nbsp; 💼 **[LinkedIn](https://www.linkedin.com/in/anup-kumar-sharma-142931253/)** &nbsp;·&nbsp; 🐙 **[@anupamkr1708](https://github.com/anupamkr1708)**
+🌐 **[Portfolio](https://anupai-portfolio.vercel.app/)** &nbsp;·&nbsp; 📧 **[Email](mailto:anupsharma1708@gmail.com)** &nbsp;·&nbsp; 💼 **[LinkedIn](https://www.linkedin.com/in/anup-kumar-sharma-142931253/)** &nbsp;·&nbsp; 🐙 **[GitHub](https://github.com/anupamkr1708)**
 
 <br/>
 
