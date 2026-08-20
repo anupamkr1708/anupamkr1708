@@ -1,48 +1,32 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Anupam%20Kumar&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=AI%20Engineer%20%E2%80%A2%20Agentic%20Systems%20%E2%80%A2%20Backend%20Platforms&descAlignY=58&descSize=18&descColor=a78bfa" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=170&section=header&text=Anupam%20Kumar&fontSize=46&fontColor=ffffff&fontAlignY=38&desc=AI%20Engineer%20%E2%80%A2%20Agentic%20Systems%20%E2%80%A2%20Backend%20Platforms&descAlignY=58&descSize=16&descColor=a78bfa" />
 
-<br/>
-
-<a href="https://anupai-portfolio.vercel.app/">
-  <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" />
-</a>&nbsp;
-<a href="https://www.linkedin.com/in/anup-kumar-sharma-142931253/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>&nbsp;
-<a href="https://github.com/anupamkr1708">
-  <img src="https://img.shields.io/badge/GitHub-161b22?style=for-the-badge&logo=github&logoColor=white" />
-</a>&nbsp;
-<a href="mailto:anupsharma1708@gmail.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>&nbsp;
+<a href="https://anupai-portfolio.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>&nbsp;
+<a href="https://www.linkedin.com/in/anup-kumar-sharma-142931253/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;
+<a href="https://github.com/anupamkr1708"><img src="https://img.shields.io/badge/GitHub-161b22?style=for-the-badge&logo=github&logoColor=white" /></a>&nbsp;
+<a href="mailto:anupsharma1708@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;
 <img src="https://komarev.com/ghpvc/?username=anupamkr1708&color=7c3aed&style=for-the-badge&label=PROFILE+VIEWS" />
-
-<br/><br/>
-
-```
-╔══════════════════════════════════════════════════════════════════════════════╗
-║   Building production AI systems that move beyond prototypes —              ║
-║   Graph-RAG engines, agentic pipelines, and full-stack AI platforms         ║
-║   with measurable reliability, end-to-end observability, and real impact.   ║
-╚══════════════════════════════════════════════════════════════════════════════╝
-```
 
 </div>
 
----
+<br/>
 
-## About Me
+## About
 
-I'm **Anupam Kumar**, an AI Engineer with a B.Tech in Computer Science from IIITM Gwalior (2021–2025). I build production AI systems — Graph-RAG engines, agentic pipelines, and full-stack platforms — designed to hold up under real traffic, not just in a demo.
+I build AI systems because I'm interested in the harder question behind them: how do you make machines retrieve, reason, and act *reliably* — not just work once in a notebook.
 
-My work spans three areas I like to own end-to-end: **AI systems** (retrieval, reasoning, agents), **backend & platform engineering** (APIs, distributed services, containerized deployment), and **ML infrastructure** (evaluation, experiment tracking, observability).
+My work sits at the intersection of applied AI and backend engineering — RAG, agentic workflows, computer vision, and retrieval systems, plus the infrastructure that makes them usable beyond a demo. I'm drawn to the problems where the obvious solution isn't quite enough: grounding an LLM, making retrieval actually useful, designing agents that fail safely, and building systems that keep working when the model, data, or network doesn't cooperate.
+
+I deliberately take on things slightly beyond what I already know — I'd rather build something hard, break it, understand why it broke, and come back better. Long term, I'm interested in the broader question of intelligence: how we represent knowledge, retrieve it, reason over it, and build systems that help us understand the world a little better.
 
 Currently open to full-time roles in **AI Engineering · Platform Engineering · ML Infrastructure**.
 
----
+*Always interested in working with people who think deeply, build seriously, and aren't afraid to challenge how something is supposed to be done.*
 
-## 🧰 Tech Stack
+<br/>
+
+## Tech Stack
 
 **Languages**
 
@@ -69,66 +53,72 @@ Currently open to full-time roles in **AI Engineering · Platform Engineering ·
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 
 
----
+<br/>
 
-## 🚀 Featured Projects
+## Featured Projects
 
-### 🔬 AetherCV — Graph-RAG Research Engine
-*Citation-graph-aware RAG system answering computer vision research questions across 238 papers with zero hallucinations.*
+### 1. AetherCV — Graph-RAG Research Engine
+**A citation-graph-aware retrieval system for computer vision research — dense, lexical, and citation-graph signals fused into a single retrieval layer, with grounding measured rather than assumed.**
+
+Most RAG systems treat retrieval as one similarity search. AetherCV treats it as three independent evidence sources — semantic similarity, exact terminology via BM25, and citation relationships between papers — merged through a router that decides which signal to trust for a given question, then verifies the answer is actually supported before it's returned.
+
+- Multi-signal retrieval (dense + BM25 + citation-graph) reaches **0.94 context recall**, measured against a held-out evaluation set rather than reported from a single run.
+- A **7-layer Redis caching architecture** (exact, semantic, retrieval, decomposition, intent) pushes the **cache hit rate above 84%**, holding **p99 latency near 4.9 seconds on CPU-only infrastructure** — no GPU in the serving path.
+- A multi-signal semantic router (domain centroid, retrieval-support probe, entity-shape check) catches out-of-domain questions *before* generation, keeping every answered response grounded in retrieved evidence with zero false-positive escapes.
+- Fully instrumented for MLOps — MLflow experiment tracking, Prometheus/Grafana monitoring, containerized deployment — with zero evaluation failures across all benchmark runs.
 
 `Python` `FastAPI` `FAISS` `BM25` `Redis` `PostgreSQL` `Prometheus` `MLflow` `Docker`
 
-- Built a production Graph-RAG platform combining dense, lexical, and citation-graph retrieval to reach **0.94 context recall** and a **0% hallucination rate** across 238 papers / 12,288 chunks.
-- Engineered a 7-layer Redis caching system (exact, semantic, retrieval, decomposition, intent) that drove an **84%+ cache hit rate** while keeping p99 latency near **4.9s on CPU-only infrastructure**.
-- Designed a multi-signal semantic router (domain centroid, retrieval-support probe, entity shape) for out-of-domain detection, keeping responses **100% grounded** with zero false-positive escapes.
-- Instrumented full MLOps observability — MLflow tracking, Prometheus/Grafana monitoring, containerized deployment — with **zero evaluation failures** across all benchmark runs.
+**[Live Demo](https://aether-cv.vercel.app/) · [GitHub](https://github.com/anupamkr1708/AetherCV-Graph-RAG)**
 
-[**↳ View on GitHub**](https://github.com/anupamkr1708/AetherCV-Graph-RAG)
+<br/>
 
-### 🚀 LeadBoost SaaS — AI Lead Intelligence Platform
-*Multi-tenant platform that discovers, enriches, and scores sales leads at scale.*
+### 2. LeadBoost — B2B Lead Intelligence Platform
+**A single natural-language query — *"electronics stores in Bengaluru"* — becomes validated, AI-scored leads with drafted outreach, end to end, in one API call.**
 
-`LangChain` `Playwright` `Celery` `FastAPI` `PostgreSQL` `React` `Docker`
+At its core is a **six-stage identity resolution engine** solving a problem most lead-gen tools quietly get wrong: confirming a website actually belongs to *this* business, in *this* location — not a same-named competitor three cities over, or an unrelated directory listing. Evidence, features, and five independent verifiers feed a confidence-propagation model, so every match ships with an explainable score instead of a guess.
 
-- Architected a multi-tenant lead-intelligence SaaS processing **1,000+ leads/day** via distributed Playwright scrapers running on Celery workers.
-- Built a LangChain + Groq enrichment pipeline for semantic entity extraction and contact qualification, cutting manual research effort by **up to 80%**.
-- Implemented a JWT-secured, role-based multi-tenant FastAPI backend with a React dashboard for real-time lead scoring and pipeline analytics.
-- Containerized the full stack with Docker Compose for one-command deployment.
+- Benchmarked on **113 real-world queries across 20+ Indian cities**: **88.8%** correct website resolution, **87.4%** validation success, **96.4%** cross-provider agreement, **100%** query-parse reliability.
+- A **six-tier escalating scraper** (static fetch → TLS-fingerprint impersonation → headless rendering → multi-page crawl) feeds a three-tier enrichment waterfall and **four LangGraph-orchestrated agents** — Company Intelligence, Decision, Review, Messaging — each backed by a deterministic fallback, so no stage depends on an LLM to function.
+- Grounding is independently measured, not assumed: an evaluation harness runs the full production pipeline end to end, cross-checking every AI-claimed signal against scraped evidence before it reaches a lead record. The Decision agent can only **downgrade** a lead's priority, never inflate it; outreach falls back to strict templates rather than let a model invent facts.
 
-[**↳ View on GitHub**](https://github.com/anupamkr1708/LeadBoost-saas)
+`FastAPI` `SQLAlchemy` `LangGraph` `LangChain` `Groq (Llama 3.3 70B)` `Playwright` `curl_cffi` `Next.js 14` `TypeScript` `TanStack Query` `Zustand` `Prometheus / Grafana`
 
-### 🌿 AyurGenix — Agentic RAG for Ayurvedic Medicine
-*Citation-grounded RAG platform making 10,000+ pages of Sanskrit manuscripts searchable and conversational.*
+**[Live Demo](https://lead-boost-saas.vercel.app/) · [GitHub](https://github.com/anupamkr1708/LeadBoost-saas)**
 
-`FastAPI` `PyTorch` `Pinecone` `LangChain` `Docker`
+<br/>
 
-- Built a custom Char-CNN OCR model to digitize Sanskrit-script manuscripts — solving a problem standard OCR tools fail at entirely.
-- Indexed 10,000+ pages into Pinecone, enabling sub-second semantic retrieval across the classical text corpus.
-- Reranked candidates with a cross-encoder and generated citation-grounded answers traceable to a specific source passage.
-- Powered multi-turn consultations through a LLaMA-3 conversational layer with persistent session memory.
+### 3. VisionServeAI — Production Serving Layer for a Medical Imaging Classifier
+**A production-engineered FastAPI microservice serving a 14-pathology chest X-ray classifier — three pluggable inference runtimes, a 7-method explainability suite, and a validation pipeline rigorous enough to block its own model from shipping.**
 
-[[**↳ View on GitHub**](https://github.com/anupamkr1708/AyurProject)
+This is the deployment layer for a multi-label chest X-ray classifier trained on NIH ChestX-ray14 — the part of the ML lifecycle that turns a notebook into a service that can actually be operated: typed configuration, a runtime abstraction layer, fail-fast startup validation, structured request-correlated logging, and a 177-test suite enforced as a build-time CI gate.
 
-### 🤖 TalentForge AI — Autonomous Job Application Platform
-*End-to-end automation from LinkedIn job discovery to Easy Apply submission, gated by AI resume scoring.*
+- **Runtime-agnostic serving** — PyTorch, TorchScript, and ONNX Runtime sit behind one `BaseRuntime` interface; switching backends is a config change, not a code change.
+- **Seven explainability methods** — Grad-CAM, Grad-CAM++, Score-CAM, Eigen-CAM, Guided Backprop, Integrated Gradients, Occlusion — exposed as first-class API endpoints, not notebook-only diagnostics.
+- **An evaluation pipeline that reports its own findings honestly:** an 8-stage audit — including a 127-check engineering validation suite — assessed the trained checkpoint on a 25,596-image held-out test split and correctly returned a `DO_NOT_DEPLOY` scorecard rather than let an underperforming model ship on a green build. That distinction — a system that knows when *not* to trust its own output — is the point of the project.
+- Multi-stage Docker build (`builder → test → runtime`), an Nginx reverse proxy, and cloud-native artifact provisioning via HuggingFace Hub, using the same fingerprint-verification path whether artifacts are local or remote.
 
-`Python` `Playwright` `Streamlit` `SQLite` `Groq` `LangChain`
+`FastAPI` `PyTorch` `ONNX Runtime` `TorchScript` `Docker` `Nginx` `HuggingFace Hub` `pytest`
 
-- Automated the full pipeline: LinkedIn scraping → LLM resume scoring (**70% semantic, 30% keyword**) → Playwright-based Easy Apply submission.
-- Enforced a strict state machine (`Discovered → Scored → Queued → Applied/Skipped/Failed`) with every decision logged to SQLite.
-- Built in safety controls — daily application caps, a dry-run mode, and a 4-tier LLM fallback chain (Groq → OpenRouter → HuggingFace → keyword) — for reliable, unattended operation.
-- Shipped a real-time Streamlit dashboard for match-score distribution, application trends, and CSV export.
+**[Live Demo](https://visionserveai.netlify.app/) · [GitHub](https://github.com/anupamkr1708/VisionServeAI)**
 
-[**↳ View on GitHub**](https://github.com/anupamkr1708/TalentForge-AI)
+<br/>
 
----
+### Other Projects
 
+**AyurGenix** — Agentic RAG over 10,000+ pages of Sanskrit manuscripts. Custom Char-CNN OCR for Sanskrit script, Pinecone-indexed sub-second retrieval, cross-encoder reranking, and citation-grounded answers via a LLaMA-3 conversational layer.
+`FastAPI` `PyTorch` `Pinecone` `LangChain` — [GitHub](https://github.com/anupamkr1708/AyurProject)
 
-## 📊 GitHub Activity — Last 12 Months
+**TalentForge AI** — Autonomous job-application pipeline: LinkedIn scraping → LLM resume scoring (70% semantic, 30% keyword) → Playwright-based Easy Apply, gated by a strict state machine and a 4-tier LLM fallback chain for unattended, reliable operation.
+`Python` `Playwright` `Groq` `LangChain` `Streamlit` — [GitHub](https://github.com/anupamkr1708/TalentForge-AI)
+
+<br/>
+
+## GitHub Activity
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=anupamkr1708&show_icons=true&theme=tokyonight&include_all_commits=false&count_private=true&hide_border=true&bg_color=0d1117&title_color=7c3aed&icon_color=a78bfa&text_color=c9d1d9&custom_title=GitHub%20Stats%20(Last%2012%20Months)"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=anupamkr1708&show_icons=true&theme=tokyonight&include_all_commits=false&count_private=true&hide_border=true&bg_color=0d1117&title_color=7c3aed&icon_color=a78bfa&text_color=c9d1d9"/>
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anupamkr1708&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7c3aed&text_color=c9d1d9"/>
 
 <br/>
@@ -140,25 +130,20 @@ Currently open to full-time roles in **AI Engineering · Platform Engineering ·
 ![](https://github-readme-activity-graph.vercel.app/graph?username=anupamkr1708&theme=tokyo-night&hide_border=true&area=true&bg_color=0d1117&color=a78bfa&line=7c3aed&point=ffffff&days=365&custom_title=Contribution%20Activity%20(Last%2012%20Months))
 
 </div>
----
-
-## 🎓 Education
-
-**Indian Institute of Information Technology and Management, Gwalior**
-B.Tech in Computer Science &nbsp;|&nbsp; 2021 – 2025
-
----
-
-## 📫 Let's Connect
-
-Open to collaborating on AI engineering projects, or discussing full-time opportunities in AI Engineering, Platform Engineering, or ML Infrastructure.
-
-<div align="center">
-
-🌐 **[Portfolio](https://anupai-portfolio.vercel.app/)** &nbsp;·&nbsp; 📧 **[Email](mailto:anupsharma1708@gmail.com)** &nbsp;·&nbsp; 💼 **[LinkedIn](https://www.linkedin.com/in/anup-kumar-sharma-142931253/)** &nbsp;·&nbsp; 🐙 **[GitHub](https://github.com/anupamkr1708)**
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer" />
+## Education
+
+**Indian Institute of Information Technology and Management, Gwalior**
+B.Tech in Computer Science — 2021 to 2025
+
+<br/>
+
+<div align="center">
+
+📧 **[Email](mailto:anupsharma1708@gmail.com)** &nbsp;·&nbsp; 💼 **[LinkedIn](https://www.linkedin.com/in/anup-kumar-sharma-142931253/)** &nbsp;·&nbsp; 🌐 **[Portfolio](https://anupai-portfolio.vercel.app/)** &nbsp;·&nbsp; 🐙 **[GitHub](https://github.com/anupamkr1708)**
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer" />
 
 </div>
