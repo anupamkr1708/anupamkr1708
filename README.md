@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=170&section=header&text=Anupam%20Kumar&fontSize=46&fontColor=ffffff&fontAlignY=38&desc=AI%20Engineer%20%E2%80%A2%20Agentic%20Systems%20%E2%80%A2%20Backend%20Platforms&descAlignY=58&descSize=16&descColor=a78bfa" />
 
 <a href="https://anupai-portfolio.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>&nbsp;
-<a href="https://www.linkedin.com/in/anup-kumar-sharma-142931253/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;
+<a href="https://www.linkedin.com/in/anupam-kumar-142931253/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;
 <a href="https://github.com/anupamkr1708"><img src="https://img.shields.io/badge/GitHub-161b22?style=for-the-badge&logo=github&logoColor=white" /></a>&nbsp;
 <a href="mailto:anupsharma1708@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;
 <img src="https://komarev.com/ghpvc/?username=anupamkr1708&color=7c3aed&style=for-the-badge&label=PROFILE+VIEWS" />
@@ -14,13 +14,12 @@
 
 ## About
 
-I build AI systems because I'm interested in the harder question behind them: how do you make machines retrieve, reason, and act *reliably* — not just work once in a notebook.
+I'm Anupam Kumar, an AI Engineer and Computer Science graduate from **IIITM Gwalior ('25)**. I build **production-oriented AI systems** across **RAG, agentic workflows, retrieval, computer vision, and AI backends**.
 
-My work sits at the intersection of applied AI and backend engineering — RAG, agentic workflows, computer vision, and retrieval systems, plus the infrastructure that makes them usable beyond a demo. I'm drawn to the problems where the obvious solution isn't quite enough: grounding an LLM, making retrieval actually useful, designing agents that fail safely, and building systems that keep working when the model, data, or network doesn't cooperate.
+My focus is on making AI systems **reliable beyond the demo** — from retrieval and grounding to evaluation, backend architecture, and deployment.
 
-I deliberately take on things slightly beyond what I already know — I'd rather build something hard, break it, understand why it broke, and come back better. Long term, I'm interested in the broader question of intelligence: how we represent knowledge, retrieve it, reason over it, and build systems that help us understand the world a little better.
+Currently open to **AI Engineering, ML/AI Infrastructure, and Platform Engineering** roles.
 
-Currently open to full-time roles in **AI Engineering · Platform Engineering · ML Infrastructure**.
 
 *Always interested in working with people who think deeply, build seriously, and aren't afraid to challenge how something is supposed to be done.*
 
@@ -88,22 +87,6 @@ At its core is a **six-stage identity resolution engine** solving a problem most
 
 <br/>
 
-### 3. VisionServeAI — Production Serving Layer for a Medical Imaging Classifier
-**A production-engineered FastAPI microservice serving a 14-pathology chest X-ray classifier — three pluggable inference runtimes, a 7-method explainability suite, and a validation pipeline rigorous enough to block its own model from shipping.**
-
-This is the deployment layer for a multi-label chest X-ray classifier trained on NIH ChestX-ray14 — the part of the ML lifecycle that turns a notebook into a service that can actually be operated: typed configuration, a runtime abstraction layer, fail-fast startup validation, structured request-correlated logging, and a 177-test suite enforced as a build-time CI gate.
-
-- **Runtime-agnostic serving** — PyTorch, TorchScript, and ONNX Runtime sit behind one `BaseRuntime` interface; switching backends is a config change, not a code change.
-- **Seven explainability methods** — Grad-CAM, Grad-CAM++, Score-CAM, Eigen-CAM, Guided Backprop, Integrated Gradients, Occlusion — exposed as first-class API endpoints, not notebook-only diagnostics.
-- **An evaluation pipeline that reports its own findings honestly:** an 8-stage audit — including a 127-check engineering validation suite — assessed the trained checkpoint on a 25,596-image held-out test split and correctly returned a `DO_NOT_DEPLOY` scorecard rather than let an underperforming model ship on a green build. That distinction — a system that knows when *not* to trust its own output — is the point of the project.
-- Multi-stage Docker build (`builder → test → runtime`), an Nginx reverse proxy, and cloud-native artifact provisioning via HuggingFace Hub, using the same fingerprint-verification path whether artifacts are local or remote.
-
-`FastAPI` `PyTorch` `ONNX Runtime` `TorchScript` `Docker` `Nginx` `HuggingFace Hub` `pytest`
-
-**[Live Demo](https://visionserveai.netlify.app/) · [GitHub](https://github.com/anupamkr1708/VisionServeAI)**
-
-<br/>
-
 ### Other Projects
 
 **AyurGenix** — Agentic RAG over 10,000+ pages of Sanskrit manuscripts. Custom Char-CNN OCR for Sanskrit script, Pinecone-indexed sub-second retrieval, cross-encoder reranking, and citation-grounded answers via a LLaMA-3 conversational layer.
@@ -142,7 +125,7 @@ B.Tech in Computer Science — 2021 to 2025
 
 <div align="center">
 
-📧 **[Email](mailto:anupsharma1708@gmail.com)** &nbsp;·&nbsp; 💼 **[LinkedIn](https://www.linkedin.com/in/anup-kumar-sharma-142931253/)** &nbsp;·&nbsp; 🌐 **[Portfolio](https://anupai-portfolio.vercel.app/)** &nbsp;·&nbsp; 🐙 **[GitHub](https://github.com/anupamkr1708)**
+📧 **[Email](mailto:anupsharma1708@gmail.com)** &nbsp;·&nbsp; 💼 **[LinkedIn](https://www.linkedin.com/in/anupam-kumar-142931253/)** &nbsp;·&nbsp; 🌐 **[Portfolio](https://anupai-portfolio.vercel.app/)** &nbsp;·&nbsp; 🐙 **[GitHub](https://github.com/anupamkr1708)**
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer" />
 
